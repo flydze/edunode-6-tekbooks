@@ -2,7 +2,7 @@
 
 {<body}
   <div class="large-4 column book">
-    <img src="/img/{book.cover}">
+    <img src="{book.cover}">
   </div>
   <div class="large-8 column book">
     <h2>{book.title}</h2>
