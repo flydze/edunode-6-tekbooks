@@ -41,6 +41,7 @@
                   <option value="{.name}">{.name}</option>
                 {/categories}
               </select>
+            </label>
           </div>
         </div>
         <div class="row">

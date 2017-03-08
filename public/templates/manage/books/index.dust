@@ -20,7 +20,13 @@
           <td>{.title}</td>
           <td>{.category}</td>
           <td><a class="button" href="/manage/books/edit/{._id}">Edit</a></td>
-          <td><a class="button alert removeBook" data-id="{._id}" href="#">Delete</a></td>
+          <td>
+            <form method="post" action="/manage/books/delete/{._id}">
+              <input type="submit" class="button alert" value="Delete" />
+              <input type="hidden" name="_csrf" value="{_csrf}" />
+              <input type="hidden" name="_method" value="DELETE" />
+            </form>
+          </td>
         </tr>
       {/books}
     </tbody>
